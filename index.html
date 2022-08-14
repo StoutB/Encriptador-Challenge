@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links y utiles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Css-->
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Challenge 01 | ONE</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="image/logo.png" alt="" srcset=""></a>
+    </header>
+
+
+    <div class="conteiner">
+        <div class="container-left">
+            <div class="user-input">
+                <textarea name="usertext" class="textarea-usuario"  id="usertext" cols="30" rows="10" placeholder="Ingrese texto aqui" ></textarea>
+                <p>&#128712;Solo letras minúsculas y sin acentos</p>
+                <div class="boton-grupo">
+                    <div class="boton-izq boton-grupo">
+                        <button class="boton boton-oscuro boton-user" id="encriptar">Encriptar</button>
+                    </div>
+                    <div class="boton-der boton-grupo">
+                        <button class="boton boton-user" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-right">
+                <div class="user-resultado" id="user=resultado">
+                    <img class="muneco"src="image/muneco.svg" alt="">
+                    <textarea disabled name="resultado" class="textarea-resultado" id="resultado" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+                    <button class="boton boton-copiar" id="copiar">Copiar</button>
+                </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
